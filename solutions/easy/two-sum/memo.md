@@ -69,7 +69,7 @@ for (j, &v2) in nums.iter().enumerate().skip(i + 1) {
 
 ---
 
-## Inskjjight
+## Insight
 ### The Core Essence of the Problem:
 何度も繰り返される検索コストを、ハッシュマップ記憶に置き換えることで、処理時間を極限まで削ぎ落とすこと
 
