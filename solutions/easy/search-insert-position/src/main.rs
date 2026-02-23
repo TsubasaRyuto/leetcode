@@ -34,6 +34,22 @@ impl Solution {
     }
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_search_insert() {
+        assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 5), 2);
+        assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 2), 1);
+        assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 7), 4);
+        assert_eq!(Solution::search_insert(vec![1, 3, 5, 6], 0), 0);
+        assert_eq!(Solution::search_insert(vec![1], 0), 0);
+        assert_eq!(Solution::search_insert(vec![1], 1), 0);
+        assert_eq!(Solution::search_insert(vec![1], 2), 1);
+    }
+}
+
 // Divide the nums array into halves to find the insertion position.
 // 1. Divide the sorted array into two halves.
 // 2. Compare the target with the last element of the first half.
