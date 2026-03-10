@@ -60,8 +60,9 @@ mod tests {
 }
 
 // Goal
-// return the number of combinations, that distinct ways can you climb to the top
-// input = 2
+// return the number of combinations of ways to climb to the top
+//
+// // input = 2
 // 1 step + 1 step
 // 2 step
 // return 2,
